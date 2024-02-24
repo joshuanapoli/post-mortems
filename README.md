@@ -80,6 +80,8 @@
 
 [Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
 
+[Resend](https://resend.com/blog/incident-report-for-february-21-2024). A database migration test was meant to be performed locally, but was accidentally applied to the production database. All tables were dropped. The database was restored after 11 hours with five minutes of data-loss.
+
 [rust-lang](https://blog.rust-lang.org/inside-rust/2023/02/08/dns-outage-portmortem.html). On Wednesday, 2023-01-25 at 09:15 UTC, we deployed changes to the production infrastructure for crates.io. During the deployment, the DNS record for static.crates.io failed to resolve for an estimated time of 10-15 minutes. It was due to the fact that both certificates and DNS records were re-created during the downtime.
 
 [rust-lang](https://blog.rust-lang.org/inside-rust/2023/07/21/crates-io-postmortem.html). On 2023-07-20 between 12:17 and 12:30 UTC all crate downloads from crates.io were broken due to a deployment that contained a bug in the download URL generation. During this time we had an average of 4.71K requests per second to crates.io, resulting in about 3.7M failed requests, including the retry attempts from cargo.
